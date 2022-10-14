@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 align="center">Higher Order Functions</h1>
+<script>
+let arr=[5,4,10,20,15]
+let arr1=arr.map(MyFun())
+function MyFun(){
+return num*2
+}
+console.log(arr1);
+let arr2=arr.filter(MyFun1())
+function MyFun1(){
+if(num>4){
+return num
+}
+}
+console.log(arr2);
+let arr3=reduce(MyFunc2())
+function MyFunc2(total,num){
+return total+num;
+}
+console.log(arr3);
+</script>
+</body>
+</html>
